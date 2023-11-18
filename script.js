@@ -8,9 +8,8 @@ function multiply (a, b) {
 
 function internal () {
 	const added = this.add(this.internal.a, this.internal.b)
-	const multiplied = this.multiply(this.internal.a, this.internal.b)
-    console.log(added, multiplied)
-	return this;
+	const multiplied = this.multiply(added, this.internal.c)
+    console.log(multiplied)
 }
 
 // Not allowed to change below this
